@@ -11,7 +11,7 @@ func UpdatePB(b **pb.ProgressBar, pt ProgressTracker) {
 
 	if *b == nil {
 		(*b) = pb.New(int(status.Total))
-		(*b).SetWidth(80)
+		(*b).SetMaxWidth(80)
 		(*b).Start()
 	}
 
